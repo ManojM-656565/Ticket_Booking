@@ -4,7 +4,7 @@ const cookieParser = require("cookie-parser");
 const dotenv = require("dotenv");
 const { connectDB } = require("./src/lib/db");
 dotenv.config();
-const authRoutes=require('./src/routes/authRoutes.route')
+const authRoutes=require('./src/routes/auth.route')
 
 const app = express();
 

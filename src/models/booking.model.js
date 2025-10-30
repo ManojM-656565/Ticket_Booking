@@ -5,7 +5,7 @@ const bookingSchema=new mongoose.Schema({
     showId:{type:mongoose.Schema.Types.ObjectId,ref:'Show',
         required:true
     },
-    seatsBooked:{type:Number,required},
+    seatsBooked:{type:Number,required:true},
     seatNumbers:[{type:String}],
     totalAmount:{type:Number,required:true},
     status:{type:String,enum:["booked","cancelled"],default:"booked"},
